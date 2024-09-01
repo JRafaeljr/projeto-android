@@ -1,0 +1,197 @@
+@charset "UTF-8";
+@font-face {
+    font-family: Idroid;
+    src: url('../fontes/idroid.otf') format('opentype');
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+    --fonte-android: 'Idroid', sans-serif;
+}
+
+body {
+    background-color: var(--cor0);
+    margin: auto;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header > h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.568);
+}
+
+h1 {
+    padding-top: 20px;
+    font: normal normal 2em var(--fonte-android);
+    color: #246340;
+}
+
+h2 {
+    font: normal normal 1em 'Idroid', sans-serif;
+    color: var(--cor4);
+    background-image: linear-gradient(to right, #C8ECD8, #EAF8F0, #FBFEFD);
+    text-indent: 8px;
+}
+
+header > h4 {
+    max-width: 380px;
+    margin: auto;
+    padding: 0px 10px 10px 10px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.568);
+}
+
+nav {
+    text-align: left;    
+    height: 30px;
+    background-color: var(--cor5);
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.377);
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav > a:hover {
+    background-color: #DAFDBA;
+    transition: 1s;
+    box-shadow:0px 7px 7px rgba(0, 0, 0, 0.322);
+}
+
+a:hover {
+    color: #FA7F08;
+}
+
+main {
+    background-color: white;
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 5px 5px 5px #272928;
+}
+
+main strong {
+    color: var(--cor3);
+    font-weight: bold;
+}
+
+main a {
+    color: #357351;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #A1C7E0;
+    font-weight: bold;
+    padding: 2px 6px;
+}
+
+main a:hover {
+    background-color: #DAFDBA;
+    transition: 1s;
+    border-radius: 5px;
+}
+
+.externo::after {
+    content: '\00a0\1F517';
+}
+
+p {
+    margin: 15px 0px;
+    text-indent: 30px;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+.picture {
+    text-align: center;
+}
+
+picture > img {
+    width: 100%;
+}
+
+main img.pequena{
+display: block;
+margin: auto;
+max-width: 350px;
+}
+
+div.video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 57%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    border-radius:  0px 0px 10px 10px;
+    background-color: #C5EBD6;
+    padding: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.39);
+}
+
+aside h3 {
+    background-color: #2FA866;
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside ul {
+    list-style-position: inside;
+    list-style-type: '\2714\00a0\00a0'; /* O código 2714 coloca o visto e o código 00a0 o espaço */
+    columns: 2;
+}
+
+footer {
+    background-color: #1A5C38;
+    color: white;
+    padding: 5px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+footer a {
+    padding: 0px 8px;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    background-color: #DAFDBA;
+    transition: 1s;
+}
