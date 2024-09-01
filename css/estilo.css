@@ -99,6 +99,10 @@ main strong {
     font-weight: bold;
 }
 
+main strong:hover {
+    color: #FA7F08;    
+}
+
 main a {
     color: #357351;
     font-weight: bold;
